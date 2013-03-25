@@ -24,7 +24,7 @@ echo "every 4 weeks" >> /tmp/logs    # => 4 weeks
 Then run it;
 
 ```bash
-$ shell-jobs new.jobs
+$ shell-jobs new.jobs # globbing enabled
 ```
 
 Process outputs are hidden by default. Use `--out` to print the stdout of certain jobs;
