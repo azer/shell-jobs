@@ -1,10 +1,9 @@
-
     USAGE
 
         shell-jobs [files] [options]
 
     OPTIONS
 
-        -o    --output     Show outputs from the commands at specified index(es). e.g -o 0, 2, 3
+        -o    --out        Show outputs from the commands at specified index(es). e.g -o 0, 2, 3
         -v    --version    Show version and exit
         -h    --help       Show help and exit
