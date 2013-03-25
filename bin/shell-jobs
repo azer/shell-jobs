@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
-var opt  = require('optimist'),
-    argv = opt
+var opt   = require('optimist'),
+    argv  = opt
+      .options('daemon', { alias: 'd' })
+      .options('stop', { alias: 's' })
       .options('out', { alias: 'o' })
       .options('version', { alias: 'v' })
       .options('help', { alias: 'h' })
@@ -9,10 +11,16 @@ var opt  = require('optimist'),
 
 require('../lib/debug')(String(argv.out));
 
+argv.daemon && ( require('debug')('jobs')('Running as daemon on the background. Pid written into ./shell-jobs.pid'),
+                 process.stdout.write('\n\n'),
+                 require('daemon')() );
+
 var jobs    = require('../'),
+    stop    = require('../lib/stop'),
     help    = require('../lib/help'),
     version = require('../lib/version');
 
+if(argv.stop) stop();
 if(argv.help || argv._.length == 0) help();
 if(argv.version) version();
 

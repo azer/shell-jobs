@@ -8,12 +8,14 @@ module.exports = cli;
 
 function cli(args){
 
-  args = filterDuplicates(flatten(args.map(withGlob)));
+  fs.writeFileSync('shell-jobs.pid', process.pid);
+  debug('pid (%s) written into shell-jobs.pid', process.pid);
 
-  args
+  filterDuplicates(flatten(args.map(withGlob)))
     .map(readFile)
     .map(toString)
     .forEach(jobs);
+
 }
 
 function filterDuplicates(files){

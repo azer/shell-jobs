@@ -1,0 +1,3 @@
+echo "every 3 seconds" >> /tmp/testing-daemon # => 3 seconds
+echo "every 15 seconds" >> /tmp/testing-daemon # => 15 seconds
+echo "every minute" >> /tmp/testing-daemon # => 1 minute

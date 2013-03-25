@@ -4,6 +4,8 @@
 
     OPTIONS
 
+        -d    --daemon     Run as daemon on the background.
+        -s    --stop       Stop the running daemon.
         -o    --out        Show outputs from the commands at specified index(es). e.g -o 0, 2, 3
         -v    --version    Show version and exit
         -h    --help       Show help and exit

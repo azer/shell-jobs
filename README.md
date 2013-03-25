@@ -2,7 +2,7 @@
 
 Cron replacement in NodeJS, made for humans.
 
-`.jobs` files look like this; 
+`.jobs` files look like this;
 
 ```bash
 echo `date '+%d %h %H:%M'` > /tmp/now # => 1 second
@@ -53,15 +53,13 @@ $ shell-jobs new.jobs -o 3 # will be printing the stdout of the third job 'echo 
 
     OPTIONS
 
+        -d    --daemon     Run as daemon on the background.
+        -s    --stop       Stop the running daemon.
         -o    --out        Show outputs from the commands at specified index(es). e.g -o 0, 2, 3
         -v    --version    Show version and exit
         -h    --help       Show help and exit
 
 ```
-
-## Daemons
-
-Not implemented yet :(
 
 ## Coded by BlackBear
 
