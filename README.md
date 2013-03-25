@@ -43,6 +43,12 @@ Process outputs are hidden by default. Use `--out` to print the stdout of certai
 $ shell-jobs new.jobs -o 3 # will be printing the stdout of the third job 'echo "this is a new day!"'
 ```
 
+Wanna run it as a daemon on the background?
+
+```bash
+$ shell-jobs new.jobs -d
+```
+
 ## Manual
 
 ```
