@@ -17,7 +17,7 @@ Create a new file and call it `new.jobs`
 ```bash
 echo "every 3.5 hours" >> /tmp/logs  # => 3 hours 30 seconds
 echo "every 5 minutes" >> /tmp/logs  # => 5 minutes
-echo "every" >> /tmp/logs            # comments here are ok. => 24 hours
+echo "every day" >> /tmp/logs        # comments here are ok. => 24 hours
 echo "once in 3 days" >> /tmp/logs   # => 3 days
 ```
 
