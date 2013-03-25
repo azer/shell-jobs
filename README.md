@@ -49,6 +49,10 @@ $ shell-jobs new.jobs -o 3 # will be printing the stdout of the third job 'echo 
 
 ```
 
+## Daemons
+
+Not implemented yet :(
+
 ## Coded by BlackBear
 
 Pull requests are welcome
