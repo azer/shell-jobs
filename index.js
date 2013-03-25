@@ -1,4 +1,4 @@
-var debug = require('debug')('shell-jobs'),
+var debug = require('debug')('jobs'),
     fs    = require('fs'),
     glob  = require('glob'),
     parse = require('./lib/parse'),
