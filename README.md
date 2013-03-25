@@ -4,7 +4,7 @@ Cron replacement in NodeJS, made for humans.
 
 ![](https://dl.dropbox.com/s/ld9s6cpjy3lwbb6/shell-jobs.png)
 
-### Install
+## Install
 
 ```bash
 $ npm install -g shell-jobs
