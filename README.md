@@ -17,14 +17,20 @@ Create a new file and call it `new.jobs`
 ```bash
 echo "every 3.5 hours" >> /tmp/logs  # => 3 hours 30 seconds
 echo "every 5 minutes" >> /tmp/logs  # => 5 minutes
-echo "every day" >> /tmp/logs        # comments here are ok. => 24 hours
-echo "once in 3 days" >> /tmp/logs   # => 3 days
+echo "this is a new day!"            # comments here are ok. => 24 hours
+echo "every 4 weeks" >> /tmp/logs    # => 4 weeks
 ```
 
 Then run it;
 
 ```bash
 $ shell-jobs new.jobs
+```
+
+Process outputs are hidden by default. Use `--out` to print the stdout of certain jobs;
+
+```bash
+$ shell-jobs new.jobs -o 3 # will be printing the stdout of the third job 'echo "this is a new day!"'
 ```
 
 ### Manual
@@ -37,7 +43,7 @@ $ shell-jobs new.jobs
 
     OPTIONS
 
-        -o    --output     Show outputs from the commands at specified index(es). e.g -o 0, 2, 3
+        -o    --out        Show outputs from the commands at specified index(es). e.g -o 0, 2, 3
         -v    --version    Show version and exit
         -h    --help       Show help and exit
 
