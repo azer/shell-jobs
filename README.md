@@ -2,6 +2,16 @@
 
 Cron replacement in NodeJS, made for humans.
 
+`.jobs` files look like this; 
+
+```bash
+echo `date '+%d %h %H:%M'` > /tmp/now # => 1 second
+echo "Hello World" # => 5 seconds
+echo "Hello Kitty" # => 4 hours
+```
+
+And runs like this;
+
 ![](https://dl.dropbox.com/s/ld9s6cpjy3lwbb6/shell-jobs.png)
 
 ## Install
