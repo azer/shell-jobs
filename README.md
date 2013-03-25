@@ -10,7 +10,7 @@ Cron replacement in NodeJS, made for humans.
 $ npm install -g shell-jobs
 ```
 
-### Usage
+## Usage
 
 Create a new file and call it `new.jobs`
 
@@ -33,7 +33,7 @@ Process outputs are hidden by default. Use `--out` to print the stdout of certai
 $ shell-jobs new.jobs -o 3 # will be printing the stdout of the third job 'echo "this is a new day!"'
 ```
 
-### Manual
+## Manual
 
 ```
 
@@ -49,6 +49,8 @@ $ shell-jobs new.jobs -o 3 # will be printing the stdout of the third job 'echo 
 
 ```
 
-### Coded by BlackBear
+## Coded by BlackBear
+
+Pull requests are welcome
 
 ![](http://distilleryimage4.s3.amazonaws.com/564cccc2831b11e28f3922000aaa2151_6.jpg)
