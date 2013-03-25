@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var opt  = require('optimist'),
+    argv = opt
+      .options('out', { alias: 'o' })
+      .options('version', { alias: 'v' })
+      .options('help', { alias: 'h' })
+      .argv;
+
+require('../lib/debug')(String(argv.out));
+
+var jobs    = require('../'),
+    help    = require('../lib/help'),
+    version = require('../lib/version');
+
+if(argv.help || argv._.length == 0) help();
+if(argv.version) version();
+
+jobs(argv._);

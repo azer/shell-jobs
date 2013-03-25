@@ -1,0 +1,23 @@
+{
+  "name": "shell-jobs",
+  "version": "0.0.0",
+  "description": "Cron replacement in NodeJS",
+  "main": "index.js",
+  "bin": {
+    "shell-jobs": "./bin/shell-jobs"
+  },
+  "scripts": {
+    "test": "fox"
+  },
+  "repository": {
+    "url": "git@github.com:azer/shell-jobs.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD",
+  "dependencies": {
+    "debug": "~0.7.2",
+    "optimist": "~0.3.5",
+    "glob": "~3.1.21"
+  }
+}
