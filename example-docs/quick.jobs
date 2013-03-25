@@ -1,2 +1,3 @@
 echo `date '+%d %h %H:%M'` > /tmp/now # => 1 second
-echo "Hello World" # => 3 seconds 2 seconds
+echo "Hello World" # => 5 seconds
+echo "Hello Kitty" # => 4 hours
