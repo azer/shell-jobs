@@ -1,6 +1,6 @@
 {
   "name": "shell-jobs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Cron replacement in NodeJS",
   "main": "index.js",
   "bin": {
