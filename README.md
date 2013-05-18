@@ -1,13 +1,13 @@
 ## shell-jobs
 
-Cron replacement in NodeJS, made for humans.
+Human-friendly Cron replacement in NodeJS, based on [english-time](https://github.com/azer/english-time).
 
 `.jobs` files look like this;
 
 ```bash
 echo `date '+%d %h %H:%M'` > /tmp/now # => 1 second
-echo "Hello World" # => 5 seconds
-echo "Hello Kitty" # => 4 hours
+echo "Hello World" # => 5 seconds, 200 milliseconds
+echo "CATS" # => 4 hours and 15 minutes
 ```
 
 And runs like this;
