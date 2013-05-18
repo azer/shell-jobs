@@ -67,8 +67,48 @@ $ shell-jobs new.jobs -d
 
 ```
 
-## Coded by BlackBear
+## List of Recognized Time Units and Aliases
 
-Pull requests are welcome
+**Milliseconds**
+
+* ms
+* millisec
+* millisecs
+* milliseconds
+* millisecond
+
+**Second(s)**
+
+* s
+* sec
+* secs
+* seconds
+* second
+
+**Minute(s)**
+
+* m
+* min
+* mins
+* minute
+* minutes
+
+**Hour(s)**
+
+* h
+* hour
+* hours
+
+**Day(s)**
+
+* d
+* day
+* days
+
+**Week(s)**
+
+* w
+* week
+* weeks
 
 ![](http://distilleryimage4.s3.amazonaws.com/564cccc2831b11e28f3922000aaa2151_6.jpg)
