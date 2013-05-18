@@ -67,7 +67,7 @@ $ shell-jobs new.jobs -d
 
 ```
 
-## List of Recognized Time Units and Aliases
+## List of Recognized Time Units
 
 **Milliseconds**
 
