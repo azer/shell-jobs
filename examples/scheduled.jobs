@@ -1,0 +1,4 @@
+echo "beginning from 6am, every hour" > /tmp/logs  # => beginning from 6am, every hour
+echo "1pm" > /tmp/logs  # => 1pm, every hour
+echo "Hello Kitty" # => from 07:24am, every minute
+echo "Hello World" # => 07:28am

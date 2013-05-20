@@ -20,6 +20,8 @@
     "optimist": "~0.3.5",
     "glob": "~3.1.21",
     "daemon": "~1.0.0",
-    "english-time": "0.0.1"
+    "english-time": "0.x",
+    "show-version": "0.0.0",
+    "next-time": "0.0.0"
   }
 }

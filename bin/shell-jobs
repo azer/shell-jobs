@@ -5,6 +5,7 @@ var opt   = require('optimist'),
       .options('daemon', { alias: 'd' })
       .options('stop', { alias: 's' })
       .options('out', { alias: 'o' })
+      .options('confirm', { alias: 'c' })
       .options('version', { alias: 'v' })
       .options('help', { alias: 'h' })
       .argv;
@@ -12,16 +13,15 @@ var opt   = require('optimist'),
 require('../lib/debug')(String(argv.out));
 
 argv.daemon && ( require('debug')('jobs')('Running as daemon on the background. Pid written into ./shell-jobs.pid'),
-                 process.stdout.write('\n\n'),
                  require('daemon')() );
 
-var jobs    = require('../'),
+var cli     = require('../lib/cli'),
     stop    = require('../lib/stop'),
-    help    = require('../lib/help'),
-    version = require('../lib/version');
+    confirm = require('../lib/confirm');
 
+if(argv.confirm) confirm(argv._);
 if(argv.stop) stop();
-if(argv.help || argv._.length == 0) help();
-if(argv.version) version();
+if(argv.version) require('show-version');
+if(argv.help || argv._.length == 0) require('show-help');
 
-jobs(argv._);
+cli(argv._);
