@@ -22,6 +22,6 @@
     "daemon": "~1.0.0",
     "english-time": "0.x",
     "show-version": "0.0.0",
-    "next-time": "0.0.0"
+    "next-time": "0.x"
   }
 }
