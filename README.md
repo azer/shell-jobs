@@ -29,7 +29,7 @@ Create a new file and call it `new.jobs`
 ```bash
 echo "every 3.5 hours" >> /tmp/logs  # => 3 hours 30 seconds
 echo "every 5 minutes" >> /tmp/logs  # => 5 minutes
-echo "good morning sir!"             # comments here are ok. => beginning from 8am
+echo "good morning sir!"             # comments here are ok. => 8am
 echo "every 4 weeks" >> /tmp/logs    # => 4 weeks
 ```
 
