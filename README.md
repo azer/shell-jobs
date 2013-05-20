@@ -8,7 +8,8 @@ Human-friendly Cron replacement in NodeJS, based on [english-time](https://githu
 echo `date '+%d %h %H:%M'` > /tmp/now # => 1 second
 echo "Good Morning" # => every 6am
 echo "Hello World" # => 5 seconds, 200 milliseconds
-echo "CATS" # => 4 hours and 15 minutes
+echo "CATS" # => every 4 hours and 15 minutes
+echo "YO" # => from tomorrow 6am, every 1h + 5 mins
 ```
 
 And runs like this;
