@@ -1,6 +1,6 @@
 ## shell-jobs
 
-Human-friendly Cron replacement in NodeJS, based on [english-time](https://github.com/azer/english-time).
+Human-friendly Cron replacement in NodeJS, based on [english-time](https://github.com/azer/english-time). Looking for a handier simple tool? Try: [run-after](http://github.com/azer/run-after)
 
 `.jobs` files look like this;
 
